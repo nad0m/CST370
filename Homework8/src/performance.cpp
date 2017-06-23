@@ -98,7 +98,7 @@ void quickSort(int* arr, int left, int right, int &counter)
 {
 	int i = left;
 	int j = right;
-	int pivot = arr[(left + right) / 2];
+	int pivot = arr[left];
 
 	while (i <= j)
 	{
@@ -171,8 +171,11 @@ int main() {
 	int* selectionArr =  getData(size);
 	int* quickArr = getData(size);
 
-	selectionSort(selectionArr, size, ssCounter);
-	quickSort(quickArr, 0, size-1, qsCounter);
+
+	selectionSort(selectionArr, size, ssCounter); // selection sort
+
+	quickSort(quickArr, 0, size-1, qsCounter); // quicksort
+
 
 	printAnswer(ssCounter, qsCounter);
 
