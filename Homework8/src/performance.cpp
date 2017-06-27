@@ -179,5 +179,9 @@ int main() {
 
 	printAnswer(ssCounter, qsCounter);
 
+	//Debugging:
+	//printArray(selectionArr, size);
+	//printArray(quickArr, size);
+
 	return 0;
 }
