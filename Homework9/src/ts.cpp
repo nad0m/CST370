@@ -1,5 +1,5 @@
 /*
- * Title: BFS.cpp
+ * Title: ts.cpp
  * Abstract: This program implements the topological sort algorithm.
  * Author: Huy Nguyen
  * ID: 9419
