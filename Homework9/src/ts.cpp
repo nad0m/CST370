@@ -90,6 +90,23 @@ void Graph::topologicalSort()
 	}
 }
 
+
+int power(int x, unsigned int y)
+  {
+     int temp;
+     if( y ==1)
+        return x;
+
+     if (y%2 == 0){
+      temp = power(x, y/2);
+       return temp*temp;
+     }
+     else{
+       temp = power(x, (y-1)/2);
+       return x*temp*temp;
+     }
+  }
+
 string getFileName()
 {
 	string fileName;
@@ -143,6 +160,6 @@ void ts(string fileName)
 
 int main() {
 
-	ts(getFileName());
+	cout << power(2, 3);
 	return 0;
 }
